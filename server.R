@@ -1,7 +1,6 @@
 # server.R
 library(shiny)
 
-#diabetesRisk <- function(glucose) glucose / 200
 data(mtcars)
 mtcars <- transform(mtcars, cyl = factor(cyl), am = factor(am))
 fit1 <- lm(mpg ~ am + wt + qsec + am*wt, data = mtcars)
